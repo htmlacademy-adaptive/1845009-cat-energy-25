@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
-        alt="Интернет-магазин «Кэт энерджи»">
-        <img class="main-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
-      </a>
       <nav class="main-header__nav main-nav">
+        <a class="main-nav__logo logo-header" href="#">
+          <img class="logo-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
+          alt="Интернет-магазин «Кэт энерджи»">
+          <img class="logo-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -24,12 +24,12 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -37,10 +37,8 @@
         </div>
       </nav>
     </header>
-
     <main class="main-container">
       <h1 class="visually-hidden">Cat energy - магазин функционального питания для котов</h1>
-
       <section class="nutrition-program">
         <div class="nutrition-program__wrapper">
           <h2 class="nutrition-program__title">Функциональное
@@ -48,13 +46,11 @@
           <p class="nutrition-program__slogan">
             Занялся собой? Займись котом!
           </p>
-
           <a class="nutrition-program__button button" href="#">
             Подобрать программу
           </a>
         </div>
       </section>
-
       <section class="food-kits">
         <div class="food-kits__wrapper">
           <h2 class="visually-hidden">Продукты питания для разных целей</h2>
@@ -71,7 +67,6 @@
                 Каталог slim
               </a>
             </li>
-
             <li class="food-kits__item food-kits__item--pro-kit">
               <h3 class="food-kits__title">Набор массы</h3>
               <p class="food-kits__description">
@@ -86,7 +81,6 @@
           </ul>
         </div>
       </section>
-
       <section class="benefit-reasons">
         <div class="benefit-reasons__wrapper">
           <h2 class="benefit-reasons__title">Как это работает</h2>
@@ -98,7 +92,6 @@
                 питательные вещества.
               </p>
             </li>
-
             <li class="reasons-list__item reasons-list__item--reason-2">
               <p class="reasons-list__reason-description">
                 Выпускается в виде порошка,
@@ -106,7 +99,6 @@
                 кипятком и готово.
               </p>
             </li>
-
             <li class="reasons-list__item reasons-list__item--reason-3">
               <p class="reasons-list__reason-description">
                 Замените один-два приема
@@ -114,7 +106,6 @@
                 функциональное питание.
               </p>
             </li>
-
             <li class="reasons-list__item reasons-list__item--reason-4">
               <p class="reasons-list__reason-description">
                 Уже через месяц наслаждайтесь изменениями к
@@ -124,7 +115,6 @@
           </ul>
         </div>
       </section>
-
       <section class="nutrition-program-result">
         <div class="nutrition-program-result__wrapper">
           <div class="nutrition-program-result__description">
@@ -137,22 +127,17 @@
             <dl class="nutrition-program-result__list stats-list">
               <dt class="stats-list__number">5 КГ</dt>
               <dd class="stats-list__description">Снижение веса</dd>
-
               <dt class="stats-list__number">60 дней</dt>
               <dd class="stats-list__description">Затрачено времени</dd>
             </dl>
-
             <p class="nutrition-program-result__total-price">
               Затраты на питание: 15 000 РУБ.
             </p>
           </div>
-
           <div class="nutrition-program-result__slider slider-result">
-
           </div>
         </div>
       </section>
-
       <section class="invitation">
         <div class="invitation__location">
           <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
@@ -166,7 +151,6 @@
           </address>
         </div>
         <div class="invitation__map map">
-
         </div>
       </section>
     </main>
@@ -175,7 +159,6 @@
         <a class="main-footer__logo" href="#">
           <img class="main-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Интернет-магазин «Кэт энерджи»">
         </a>
-
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -193,7 +176,6 @@
             </a>
           </li>
         </ul>
-
         <a class="main-footer__copyright copyright" href="#">
           <span class="copyright__title">HTML Academy</span>
           <img class="copyright__logo-image" src="img/html-academy-logo.svg" width="27" height="34" alt="HTML Academy">

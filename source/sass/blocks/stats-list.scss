@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+.stats-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.stats-list__number {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.stats-list__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $font-additional-color;
+}

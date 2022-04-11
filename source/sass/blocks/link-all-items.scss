@@ -1,0 +1,17 @@
+@import "../base/variables";
+
+.link-all-items__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.link-all-items__subtitle {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $font-additional-color;
+}

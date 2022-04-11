@@ -1,0 +1,30 @@
+@import "../base/variables";
+
+.food-kits {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.food-kits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.food-kits__item {
+  background-color: #f2f2f2;
+}
+
+.food-kits__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.food-kits__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-additional-color;
+}
