@@ -1,0 +1,22 @@
+@import "../base/variables";
+
+.invitation {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.invitation__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.invitation__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-additional-color;
+}

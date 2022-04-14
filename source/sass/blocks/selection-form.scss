@@ -1,0 +1,35 @@
+@import "../base/variables";
+
+.selection-form__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.selection-form__field-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $font-additional-color;
+}
+
+.selection-form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection-form__radio-label,
+.selection-form__checkbox-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.selection-form__notice {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -1,0 +1,11 @@
+@import "../base/variables";
+
+.reasons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-additional-color;
+}

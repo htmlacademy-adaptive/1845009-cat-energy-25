@@ -1,0 +1,18 @@
+@import "../base/variables";
+
+.program-selection {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.program-selection__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-selection__introduction {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
