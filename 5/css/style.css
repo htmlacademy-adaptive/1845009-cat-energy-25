@@ -1,0 +1,461 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.main-header {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-nav {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main-nav__logo {
+  height: 65px;
+}
+
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__wrapper {
+    width: 1220px;
+  }
+}
+.logo-header__logo-image,
+.logo-header__logo-text-image {
+  display: block;
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list {
+    width: 478px;
+  }
+}
+.nutrition-program {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.nutrition-program__wrapper {
+  min-height: 480px;
+}
+
+.nutrition-program__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.nutrition-program__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .nutrition-program {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .nutrition-program__wrapper {
+    min-height: 810px;
+    width: 710px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .nutrition-program__wrapper {
+    min-height: 554px;
+    width: 1220px;
+  }
+}
+.food-kits {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.food-kits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.food-kits__item {
+  background-color: #f2f2f2;
+}
+
+.food-kits__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.food-kits__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .food-kits__wrapper {
+    width: 708px;
+    min-height: 772px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .food-kits__wrapper {
+    width: 1220px;
+    min-height: 374px;
+  }
+
+  .food-kits__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+.benefit-reasons {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.benefit-reasons__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (min-width: 768px) {
+  .benefit-reasons__wrapper {
+    width: 708px;
+    min-height: 782px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .benefit-reasons__wrapper {
+    width: 1220px;
+    min-height: 280px;
+  }
+}
+.reasons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .reasons-list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    column-gap: 135px;
+  }
+
+  .reasons-list__item {
+    min-height: 280px;
+  }
+}
+@media (min-width: 1440px) {
+  .reasons-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.nutrition-program-result {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eaeaea;
+}
+
+.nutrition-program-result__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.nutrition-program-result__story {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.nutrition-program-result__total-price {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .nutrition-program-result__wrapper {
+    width: 708px;
+    min-height: 620px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .nutrition-program-result__wrapper {
+    width: 1220px;
+    min-height: 640px;
+  }
+}
+.stats-list {
+  margin: 0;
+  padding: 0;
+}
+
+.stats-list__number {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.stats-list__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.invitation {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.invitation__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.invitation__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .invitation__wrapper {
+    width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .invitation__wrapper {
+    width: 1440px;
+    min-height: 400px;
+  }
+}
+.main-footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    min-height: 148px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .main-footer__wrapper {
+    width: 1220px;
+    min-height: 150px;
+  }
+}
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.list-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-products__product-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.characteristics-list {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.characteristics-list__value {
+  margin: 0;
+}
+
+.link-all-items__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.link-all-items__subtitle {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.additional-products {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.additional-products__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.list-add-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-add-products__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.list-add-products__product-amount,
+.list-add-products__product-price {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+/*# sourceMappingURL=style.css.map */
