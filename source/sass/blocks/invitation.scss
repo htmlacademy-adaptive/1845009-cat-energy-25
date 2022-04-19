@@ -20,3 +20,18 @@
   line-height: 20px;
   color: $font-additional-color;
 }
+
+@media (min-width: $tablet-width) {
+  .invitation__wrapper {
+    width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .invitation__wrapper {
+    width: 1440px;
+    min-height: 400px;
+  }
+}

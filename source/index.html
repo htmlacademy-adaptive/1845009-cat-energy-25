@@ -2,21 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <nav class="main-header__nav main-nav">
-        <a class="main-nav__logo logo-header" href="#">
-          <img class="logo-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
-          alt="Интернет-магазин «Кэт энерджи»">
-          <img class="logo-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
+          <a class="main-nav__logo logo-header" href="#">
+            <img class="logo-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
+            alt="Интернет-магазин «Кэт энерджи»">
+            <img class="logo-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">
@@ -139,18 +140,20 @@
         </div>
       </section>
       <section class="invitation">
-        <div class="invitation__location">
-          <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="invitation__address">
-            <p class="invitation__street">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p class="invitation__city">
-              Санкт-Петербург
-            </p>
-          </address>
-        </div>
-        <div class="invitation__map map">
+        <div class="invitation__wrapper">
+          <div class="invitation__location">
+            <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <address class="invitation__address">
+              <p class="invitation__street">
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p class="invitation__city">
+                Санкт-Петербург
+              </p>
+            </address>
+          </div>
+          <div class="invitation__map map">
+          </div>
         </div>
       </section>
     </main>

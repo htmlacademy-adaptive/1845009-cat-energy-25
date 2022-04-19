@@ -25,3 +25,18 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .nutrition-program-result__wrapper {
+    width: 708px;
+    min-height: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition-program-result__wrapper {
+    width: 1220px;
+    min-height: 640px;
+  }
+}

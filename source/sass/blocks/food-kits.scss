@@ -1,8 +1,8 @@
 @import "../base/variables";
 
 .food-kits {
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .food-kits__list {
@@ -27,4 +27,25 @@
   font-size: 14px;
   line-height: 18px;
   color: $font-additional-color;
+}
+
+@media (min-width: $tablet-width) {
+  .food-kits__wrapper {
+    width: 708px;
+    min-height: 772px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-kits__wrapper {
+    width: 1220px;
+    min-height: 374px;
+  }
+
+  .food-kits__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

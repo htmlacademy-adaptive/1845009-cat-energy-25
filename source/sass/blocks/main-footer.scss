@@ -3,5 +3,23 @@
 .main-footer {
   padding-left: 20px;
   padding-right: 20px;
-  outline: #000000 1px solid;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    min-height: 148px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    width: 1220px;
+    min-height: 150px;
+  }
 }
