@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 .additional-products {
   padding-left: 20px;
   padding-right: 20px;
@@ -7,4 +9,24 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    min-height: 820px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__wrapper {
+    width: 1220px;
+    min-height: 288px;
+  }
+
+  .additional-products__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
