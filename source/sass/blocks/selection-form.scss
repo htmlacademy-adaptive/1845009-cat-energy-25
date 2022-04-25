@@ -1,5 +1,10 @@
 @import "../base/variables";
 
+.selection-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
 .selection-form__title {
   font-weight: 400;
   font-size: 24px;
@@ -32,4 +37,40 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.selection-form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .selection-form__wrapper {
+    width: 708px;
+  }
+
+  .selection-form__list--addition {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-form__wrapper {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .selection-form__contacts-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .selection-form__list--addition {
+    display: flex;
+    justify-content: space-between;
+  }
 }

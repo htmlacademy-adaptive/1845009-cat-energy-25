@@ -2,23 +2,24 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог продукции</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <nav class="main-header__nav main-nav">
-        <a class="main-nav__logo logo-header" href="index.html">
-          <img class="logo-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
-          alt="Интернет-магазин «Кэт энерджи»">
-          <img class="logo-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
+          <a class="main-nav__logo logo-header" href="index.html">
+            <img class="logo-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
+            alt="Интернет-магазин «Кэт энерджи»">
+            <img class="logo-header__logo-text-image" src="img/logo-text.svg" width="118" height="18" alt="Cat energy">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">
                 Главная
               </a>
@@ -166,54 +167,60 @@
         </div>
       </section>
       <section class="additional-products">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list list-add-products">
-          <li class="list-add-products__item">
-            <h3 class="list-add-products__title">Сахарозаменитель</h3>
-            <span class="list-add-products__product-amount">1 упаковка (100 г)</span>
-            <span class="list-add-products__product-price">200 Р.</span>
-            <a class="list-add-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="list-add-products__item">
-            <h3 class="list-add-products__title">Питьевая вода</h3>
-            <span class="list-add-products__product-amount">5 литров</span>
-            <span class="list-add-products__product-price">50 Р.</span>
-            <a class="list-add-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="list-add-products__item">
-            <h3 class="list-add-products__title">Молоко</h3>
-            <span class="list-add-products__product-amount">1 литр</span>
-            <span class="list-add-products__product-price">100 Р.</span>
-            <a class="list-add-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="list-add-products__item">
-            <h3 class="list-add-products__title">Витамины</h3>
-            <span class="list-add-products__product-amount">1 упаковка (30 г)</span>
-            <span class="list-add-products__product-price">300 Р.</span>
-            <a class="list-add-products__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="promo-gift">
-        <h2 class="visually-hidden">Подарок от Cat energy</h2>
-        <p class="promo-gift__promo-text">
-          Закажите все и получите чехол
-          для кота в подарок!
-        </p>
+        <div class="additional-products__wrapper">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <div class="additional-products__inner-wrapper">
+            <ul class="additional-products__list list-add-products">
+              <li class="list-add-products__item">
+                <h3 class="list-add-products__title">Сахарозаменитель</h3>
+                <span class="list-add-products__product-amount">1 упаковка (100 г)</span>
+                <span class="list-add-products__product-price">200 Р.</span>
+                <a class="list-add-products__button button" href="#">Заказать</a>
+              </li>
+              <li class="list-add-products__item">
+                <h3 class="list-add-products__title">Питьевая вода</h3>
+                <span class="list-add-products__product-amount">5 литров</span>
+                <span class="list-add-products__product-price">50 Р.</span>
+                <a class="list-add-products__button button" href="#">Заказать</a>
+              </li>
+              <li class="list-add-products__item">
+                <h3 class="list-add-products__title">Молоко</h3>
+                <span class="list-add-products__product-amount">1 литр</span>
+                <span class="list-add-products__product-price">100 Р.</span>
+                <a class="list-add-products__button button" href="#">Заказать</a>
+              </li>
+              <li class="list-add-products__item">
+                <h3 class="list-add-products__title">Витамины</h3>
+                <span class="list-add-products__product-amount">1 упаковка (30 г)</span>
+                <span class="list-add-products__product-price">300 Р.</span>
+                <a class="list-add-products__button button" href="#">Заказать</a>
+              </li>
+            </ul>
+            <div class="promo-gift">
+              <h2 class="visually-hidden">Подарок от Cat energy</h2>
+              <p class="promo-gift__promo-text">
+                Закажите все и получите чехол
+                для кота в подарок!
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="invitation">
-        <div class="invitation__location">
-          <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="invitation__address">
-            <p class="invitation__street">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p class="invitation__city">
-              Санкт-Петербург
-            </p>
-          </address>
-        </div>
-        <div class="invitation__map map">
+        <div class="invitation__wrapper">
+          <div class="invitation__location">
+            <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <address class="invitation__address">
+              <p class="invitation__street">
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p class="invitation__city">
+                Санкт-Петербург
+              </p>
+            </address>
+          </div>
+          <div class="invitation__map map">
+          </div>
         </div>
       </section>
       <footer class="main-footer">

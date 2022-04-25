@@ -10,3 +10,18 @@
   font-size: 36px;
   line-height: 36px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    min-height: 1800px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1220px;
+    min-height: 1400px;
+  }
+}

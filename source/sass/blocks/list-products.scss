@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 .list-products {
   list-style: none;
   margin: 0;
@@ -8,4 +10,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .list-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 62px;
+  }
 }
