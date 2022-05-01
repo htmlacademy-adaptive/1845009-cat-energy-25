@@ -1,42 +1,133 @@
 @import "../base/variables";
 
 .nutrition-program-result {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: $background-primary-color;
+  }
+}
+
+.nutrition-program-result__wrapper {
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #eaeaea;
+  min-height: 700px;
+
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    max-width: 1220px;
+    min-height: 620px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    min-height: 640px;
+  }
+}
+
+.nutrition-program-result__description {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 .nutrition-program-result__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .nutrition-program-result__story {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $font-additional-color;
-}
 
-.nutrition-program-result__total-price {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-@media (min-width: $tablet-width) {
-  .nutrition-program-result__wrapper {
-    width: 708px;
-    min-height: 620px;
-    margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .nutrition-program-result__wrapper {
-    width: 1220px;
-    min-height: 640px;
+.nutrition-program-result__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.nutrition-program-result__list {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.nutrition-program-result__total-price {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 40px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 328px;
+
+    br {
+      display: none;
+    }
   }
 }

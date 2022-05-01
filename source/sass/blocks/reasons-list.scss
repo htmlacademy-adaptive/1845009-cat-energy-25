@@ -8,23 +8,106 @@
   font-size: 14px;
   line-height: 18px;
   color: $font-additional-color;
-}
 
-@media (min-width: $tablet-width) {
-  .reasons-list {
+  @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 250px 250px;
-    column-gap: 135px;
+    grid-template-columns: auto auto;
+    row-gap: 37px;
   }
 
-  .reasons-list__item {
-    min-height: 280px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto auto;
   }
 }
 
+.reasons-list__item {
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 20px;
 
-@media (min-width: $desktop-width) {
-  .reasons-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #68b738;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--reason-1::before {
+    background-image: url("../../img/benefits/leaf.svg");
+  }
+
+  &--reason-2::before {
+    background-image: url("../../img/benefits/washing.svg");
+  }
+
+  &--reason-3::before {
+    background-image: url("../../img/benefits/eat.svg");
+  }
+
+  &--reason-4::before {
+    background-image: url("../../img/benefits/alarm.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding: 0;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+
+    &--reason-1 {
+      width: 230px;
+      background-image: url("../../img/benefits/background-1.svg");
+      background-position: right 34px bottom 13px;
+    }
+
+    &--reason-2 {
+      width: 246px;
+      background-image: url("../../img/benefits/background-2.svg");
+      background-position: right 10px bottom 13px;
+    }
+
+    &--reason-3 {
+      width: 247px;
+      background-image: url("../../img/benefits/background-3.svg");
+      background-position: right 10px bottom 13px;
+    }
+
+    &--reason-4 {
+      width: 249px;
+      background-image: url("../../img/benefits/background-4.svg");
+      background-position: right 0 bottom 13px;
+    }
+
+    &::before {
+      top: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+
+    &--reason-1 {
+      margin-left: 0;
+    }
+  }
+}
+
+.reasons-list__reason-description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 150px;
   }
 }

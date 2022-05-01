@@ -1,37 +1,89 @@
 @import "../base/variables";
 
-.invitation {
-  padding-left: 20px;
-  padding-right: 20px;
+.invitation__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    min-height: 400px;
+  }
 }
 
+.invitation__location {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 89%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 56px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 90px;
+    background-color: #ffffff;
+    width: 565px;
+  }
+}
+
+
 .invitation__title {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invitation__address {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   color: $font-additional-color;
-}
 
-@media (min-width: $tablet-width) {
-  .invitation__wrapper {
-    width: 768px;
-    min-height: 600px;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
+
+.invitation__street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
+
+.invitation__city {
+  margin: 0;
+}
+
 
 @media (min-width: $desktop-width) {
   .invitation__wrapper {
     width: 1440px;
     min-height: 400px;
+    text-align: right;
   }
 }
