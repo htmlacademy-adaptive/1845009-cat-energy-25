@@ -1,21 +1,54 @@
 @import "../base/variables";
 
 .stats-list {
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  column-gap: 32px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 162px);
+    column-gap: 42px;
+  }
 }
 
 
 .stats-list__number {
+  grid-row: 1 / 2;
+  text-align: center;
   font-size: 30px;
   line-height: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .stats-list__description {
+  display: inline;
+  text-align: center;
+  position: relative;
+  width: 86px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  z-index: 1;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #eaeaea;
   color: $font-additional-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background-primary-color;
+
+    br {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,17 @@
+@import "../base/variables";
+
+.map {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.map iframe {
+  border: none;
+  display: block;
+}

@@ -1,0 +1,67 @@
+@import "../base/variables";
+
+.slider-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-result-image-wrapper {
+  height: 234px;
+  margin-bottom: 15px;
+}
+
+.slider-result__image {
+  display: block;
+}
+
+.slider-result__text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-result__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--before {
+    margin-right: 13px;
+  }
+
+  &--after {
+    margin-left: 13px;
+  }
+}
+
+.slider-result__range-button {
+  position: relative;
+  box-sizing: border-box;
+  width: 86px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.slider-result__toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 6px;
+  background: #68b738;
+  border-radius: 6px;
+  border: none;
+}
+
+.slider-result__range-button--start .slider-result__toggle {
+  left: 5px;
+}
+
+.slider-result__range-button--finish .slider-result__toggle {
+  right: 5px;
+}
