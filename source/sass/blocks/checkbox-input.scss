@@ -1,0 +1,46 @@
+@import "../base/variables";
+
+.checkbox-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.selection-form__checkbox:hover .checkbox-mark {
+  border-color: #bababa;
+}
+
+.selection-form__checkbox-input:checked + .checkbox-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/checkmark_mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 18px;
+    background-image: url("../../img/checkmark_tablet.svg");
+  }
+}
+
+.selection-form__checkbox-input:disabled + .checkbox-mark,
+.selection-form__checkbox-input:disabled ~ .selection-form__checkbox-label {
+  opacity: 0.3;
+}

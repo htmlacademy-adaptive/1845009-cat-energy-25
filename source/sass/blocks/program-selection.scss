@@ -1,37 +1,74 @@
 @import "../base/variables";
 
-.program-selection {
-  padding-left: 20px;
-  padding-right: 20px;
+.program-selection__form {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .program-selection__wrapper {
   min-height: 1300px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 72px;
+    width: 92%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 82px;
+    width: 1220px;
+  }
 }
 
 .program-selection__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
+  margin: 0;
+  margin-bottom: 37px;
 
-.program-selection__introduction {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    margin-left: 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-@media (min-width: $tablet-width) {
-  .program-selection__wrapper {
-    width: 708px;
-    margin: 0 auto;
-    min-height: 1800px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+    margin-left: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .program-selection__wrapper {
-    width: 1220px;
-    min-height: 1400px;
+.program-selection__introduction {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
