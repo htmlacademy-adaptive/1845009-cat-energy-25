@@ -15,6 +15,26 @@
     width: 40px;
     height: 40px;
   }
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/checkmark.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 18px;
+    }
+  }
 }
 
 .selection-form__checkbox:hover .checkbox-mark {
@@ -22,22 +42,7 @@
 }
 
 .selection-form__checkbox-input:checked + .checkbox-mark::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 18px;
-  height: 14px;
-  background-image: url("../../img/checkmark_mobile.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 18px;
-    background-image: url("../../img/checkmark_tablet.svg");
-  }
+  display: block;
 }
 
 .selection-form__checkbox-input:disabled + .checkbox-mark,

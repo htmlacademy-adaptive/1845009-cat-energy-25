@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-header__nav main-nav main-nav--closed"> <!--main-nav--opened - открытое меню; main-nav--closed - закрытое; main-nav--nojs - выключенный js -->
         <div class="main-nav__wrapper">
           <div class="main-nav__inner-wrapper">
             <a class="main-nav__logo" href="index.html">
@@ -95,7 +95,8 @@
               </fieldset>
             </div>
             <fieldset class="selection-form__group selection-form__group--cat-owner">
-              <legend class="selection-form__title selection-form__title--cat-owner">Контактные данные<br> (владельца кота)</legend>
+              <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+              <h2 class="selection-form__title selection-form__title--cat-owner line-title">Контактные данные<br> (владельца кота)</h2>
               <div class="selection-form__contacts-wrapper">
                 <label class="selection-form__field selection-form__field--cat-owner">
                   <span class="selection-form__field-label">E-mail:*</span>
@@ -108,11 +109,13 @@
               </div>
             </fieldset>
             <fieldset class="selection-form__group selection-form__group--comment">
-              <legend class="selection-form__title">Комментарий</legend>
+              <legend class="visually-hidden">Комментарий</legend>
+              <h2 class="selection-form__title line-title">Комментарий</h2>
               <textarea class="selection-form__comment comment-input" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="selection-form__group">
-              <legend class="selection-form__title selection-form__title--addition">Дополнительно</legend>
+              <legend class="visually-hidden">Дополнительно</legend>
+              <h2 class="selection-form__title selection-form__title--addition line-title">Дополнительно</h2>
               <ul class="selection-form__list selection-form__list--addition">
                 <li class="selection-form__item selection-form__item--checkbox">
                   <label class="selection-form__checkbox">

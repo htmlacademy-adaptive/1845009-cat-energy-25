@@ -43,19 +43,19 @@
   }
 
   &--reason-1::before {
-    background-image: url("../../img/benefits/leaf.svg");
+    background-image: url("../img/benefits/leaf.svg");
   }
 
   &--reason-2::before {
-    background-image: url("../../img/benefits/washing.svg");
+    background-image: url("../img/benefits/washing.svg");
   }
 
   &--reason-3::before {
-    background-image: url("../../img/benefits/eat.svg");
+    background-image: url("../img/benefits/eat.svg");
   }
 
   &--reason-4::before {
-    background-image: url("../../img/benefits/alarm.svg");
+    background-image: url("../img/benefits/alarm.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -66,25 +66,25 @@
 
     &--reason-1 {
       width: 230px;
-      background-image: url("../../img/benefits/background-1.svg");
+      background-image: url("../img/benefits/background-1.svg");
       background-position: right 34px bottom 13px;
     }
 
     &--reason-2 {
       width: 246px;
-      background-image: url("../../img/benefits/background-2.svg");
+      background-image: url("../img/benefits/background-2.svg");
       background-position: right 10px bottom 13px;
     }
 
     &--reason-3 {
       width: 247px;
-      background-image: url("../../img/benefits/background-3.svg");
+      background-image: url("../img/benefits/background-3.svg");
       background-position: right 10px bottom 13px;
     }
 
     &--reason-4 {
       width: 249px;
-      background-image: url("../../img/benefits/background-4.svg");
+      background-image: url("../img/benefits/background-4.svg");
       background-position: right 0 bottom 13px;
     }
 

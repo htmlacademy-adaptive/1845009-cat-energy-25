@@ -12,6 +12,24 @@
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
@@ -23,20 +41,7 @@
 }
 
 .selection-form__radio-input:checked + .radio-mark::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #68b738;
-
-  @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
-  }
+  display: block;
 }
 
 .selection-form__radio-input:disabled + .radio-mark,
