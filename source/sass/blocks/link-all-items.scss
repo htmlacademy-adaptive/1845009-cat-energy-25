@@ -1,17 +1,104 @@
 @import "../base/variables";
 
+.link-all-items {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 53px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet-width) {
+      top: 51px;
+      height: 60px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: rotate(90deg);
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet-width) {
+      top: 51px;
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px;
+    padding-top: 160px;
+    padding-bottom: 41px;
+    margin-top: 74px;
+    min-height: 245px;
+    border: 2px solid #f2f2f2;
+  }
+}
+
 .link-all-items__title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .link-all-items__subtitle {
+  margin: 0;
+  margin-bottom: 21px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $font-additional-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.link-all-items__button {
+  background-color: #f2f2f2;
+  color: $font-additional-color;
+  width: 100%;
+  padding: 10px 0;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

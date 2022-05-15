@@ -19,10 +19,16 @@
 @use "blocks/map.scss";
 @use "blocks/main-footer.scss";
 @use "blocks/social.scss";
+@use "blocks/main-form.scss";
+@use "blocks/line-title.scss";
+@use "blocks/input.scss";
+@use "blocks/radio-input.scss";
+@use "blocks/comment-input.scss";
+@use "blocks/checkbox-input.scss";
 @use "blocks/copyright.scss";
 @use "blocks/catalog.scss";
 @use "blocks/list-products.scss";
-@use "blocks/characteristics-list.scss";
+@use "blocks/product-card.scss";
 @use "blocks/link-all-items.scss";
 @use "blocks/additional-products.scss";
 @use "blocks/list-add-products.scss";

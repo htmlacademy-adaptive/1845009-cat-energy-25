@@ -1,0 +1,49 @@
+@import "../base/variables";
+
+.line-title {
+  display: inline-block;
+  position: relative;
+  padding-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
+
+    &--add-products {
+      padding-left: 36px;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--add-products {
+        padding-left: 36px;
+        margin-left: -36px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      width: 100vw;
+      height: 3px;
+      margin-top: 2px;
+      background: #68b738;
+      z-index: -1;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+  }
+}

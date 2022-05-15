@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+.comment-input {
+  min-height: 150px;
+  resize: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin: 0;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
+}
