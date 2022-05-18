@@ -2,21 +2,37 @@
 
 .nutrition-program {
   color: $font-alternative-color;
-  background-color: $background-additional-color;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: #4d4c52;
+    background-image: url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 320px 302px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     color: $font-primary-color;
-    background-color: $background-primary-color;
   }
 }
 
-.nutrition-program__wrapper {
+.nutrition-programm__wrapper {
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px);
+    padding-bottom: 5px;
+  }
+}
+
+.nutrition-program__inner-wrapper {
   min-height: 480px;
   padding: 0 20px;
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    min-height: 810px;
     width: 92%;
     max-width: 1220px;
     margin: 0 auto;
@@ -24,15 +40,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 554px;
     padding-top: 110px;
   }
 }
 
 .nutrition-program__text-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: block;
     text-align: left;
     margin-left: 87px;
   }
@@ -70,16 +90,44 @@
   }
 }
 
+.nutrition-programm__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -30px;
+    left: -100px;
+    width: 709px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -90px;
+    left: 368px;
+    width: 552px;
+  }
+}
+
 .nutrition-program__button {
   width: 100%;
   font-size: 14px;
   line-height: 18px;
   padding: 7px 0;
-  outline: white 1px solid;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    position: absolute;
+    top: 230px;
     width: auto;
     padding: 14px 26px;
+    z-index: 10;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
   }
 }

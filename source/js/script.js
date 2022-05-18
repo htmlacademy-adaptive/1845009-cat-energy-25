@@ -14,22 +14,19 @@ navToggle.addEventListener('click', function () {
 });
 
 let sliderToggle = document.querySelector('.slider-result__range-button');
-let sliderImage = document.querySelector('.slider-result__image');
+let sliderImageBefore = document.querySelector('.slider-result__image--before');
+let sliderImageAfter = document.querySelector('.slider-result__image--after');
 
 sliderToggle.addEventListener('click', function () {
   if (sliderToggle.classList.contains('slider-result__range-button--start')) {
     sliderToggle.classList.remove('slider-result__range-button--start');
     sliderToggle.classList.add('slider-result__range-button--finish');
-    sliderImage.src = 'img/slider/after-mobile.png';
-    sliderImage.width = '155';
-    sliderImage.height = '232';
-    sliderImage.alt = 'after';
+    sliderImageBefore.classList.remove('slider-result__image--opened');
+    sliderImageAfter.classList.add('slider-result__image--opened');
     } else if (sliderToggle.classList.contains('slider-result__range-button--finish')) {
       sliderToggle.classList.remove('slider-result__range-button--finish');
       sliderToggle.classList.add('slider-result__range-button--start');
-      sliderImage.src = 'img/slider/before-mobile.png';
-      sliderImage.width = '280';
-      sliderImage.height = '232';
-      sliderImage.alt = 'before';
+      sliderImageAfter.classList.remove('slider-result__image--opened');
+      sliderImageBefore.classList.add('slider-result__image--opened');
     }
   });

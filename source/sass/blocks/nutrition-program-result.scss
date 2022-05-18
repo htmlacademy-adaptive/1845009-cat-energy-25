@@ -2,9 +2,16 @@
 
 .nutrition-program-result {
   background-color: #eaeaea;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $background-primary-color;
+    background-image: linear-gradient(to top, #eaeaea 462px, $background-primary-color 462px);
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, #f2f2f2 462px, $background-primary-color 462px);
+    padding-bottom: 65px;
   }
 }
 
@@ -12,21 +19,17 @@
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  min-height: 700px;
 
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 1220px;
-    min-height: 620px;
     margin: 0 auto;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1220px;
-    min-height: 640px;
   }
 }
 
@@ -125,6 +128,7 @@
     display: flex;
     justify-content: space-between;
     width: 328px;
+    margin-bottom: 0;
 
     br {
       display: none;
