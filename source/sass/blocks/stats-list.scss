@@ -51,4 +51,8 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }

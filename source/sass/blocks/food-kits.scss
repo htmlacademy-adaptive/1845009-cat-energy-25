@@ -28,12 +28,103 @@
 }
 
 .food-kits__item {
+  position: relative;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 18px;
   background-color: #f2f2f2;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      transform: none;
+      left: 67px;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  &--slim-kit::after {
+    top: 21px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/catSlim.svg");
+    background-size: 36px 50px;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      left: auto;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 35px;
+      left: 80px;
+      right: auto;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
+  }
+
+  &--pro-kit::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/catPro.svg");
+    background-size: 67px 28px;
+
+    @media (min-width: $tablet-width) {
+      top: 136px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+      background-size: 268px 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 60px;
+      left: 48px;
+      right: auto;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -42,25 +133,33 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 53px;
-    padding-right: 63px;
+    padding-right: 316px;
     padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding-bottom: 55px;
+    padding-right: 51px;
   }
 }
 
 .food-kits__title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 91px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -86,6 +185,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 48px;
     color: $font-primary-color;
     font-size: 16px;
     line-height: 24px;
@@ -97,6 +198,11 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 23px;
   }
 }
 

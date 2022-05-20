@@ -1,2 +1,26 @@
 @import "../base/variables";
 
+.main-header {
+  @media (min-width: $desktop-width) {
+    &--index {
+      background-image: url("../img/index-background-desktop.jpg");
+      background-color: #4d4c52;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 720px auto;
+      margin-bottom: 70px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop2x.jpg");
+      }
+    }
+  }
+}
+
+
+.main-header__container {
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to right, $background-primary-color 50%, rgba(104, 183, 56, 0.85) 50%);
+    padding-bottom: 5px;
+  }
+}
