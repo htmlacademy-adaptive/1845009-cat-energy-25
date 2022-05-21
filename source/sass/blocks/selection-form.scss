@@ -11,6 +11,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    align-items: baseline;
     column-gap: 80px;
   }
 }
@@ -76,10 +78,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 76px;
 
     &--addition {
       margin-bottom: 57px;
@@ -93,6 +98,7 @@
 
 .selection-form__field {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 13px;
@@ -123,6 +129,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.selection-form__input-wrapper {
+  flex-grow: 1;
+  display: flex;
 }
 
 .selection-form__field-control {

@@ -1,10 +1,99 @@
 @import "../base/variables";
 
 .promo-gift {
+  position: relative;
+  background-image: url("../img/promo-gift__background-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-gift__background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-gift__background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-gift__background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+    background-image: url("../img/promo-gift__background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-gift__background-desktop@2x.jpg");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 82px;
+    background-image: url("../img/icon_gift.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%) translateX(0);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 55px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.promo-gift__wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo-gift__text-wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 290px;
+  padding-top: 186px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $font-alternative-color;
-  background-color: $background-additional-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-right: 124px;
+    min-height: 200px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 288px;
+    width: 245px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 42px;
+  }
+
+  &__promo-text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+  }
 }

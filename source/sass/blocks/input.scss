@@ -10,28 +10,32 @@
   border: 1px solid #e7e7e7;
   color: #444444;
 
-  &--email {
-    background-image: url("../img/icon_email.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-  }
-
-  &--phone {
-    background-image: url("../img/icon_phone.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-  }
-
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus {
     outline: 2px solid #444444;
+
+    & + .input__icon--phone {
+      fill: #68b738;
+    }
+
+    & + .input__icon--email {
+      stroke: #68b738;
+    }
   }
 
   &--error {
     outline: 2px solid #ff8282;
+
+    & + .input__icon--phone {
+      fill: #ff8282;
+    }
+
+    & + .input__icon--email {
+      stroke: #ff8282;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -39,4 +43,17 @@
     line-height: 30px;
     padding: 10px 20px;
   }
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
 }

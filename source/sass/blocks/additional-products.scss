@@ -9,7 +9,7 @@
     width: 92%;
     max-width: 1220px;
     margin: 0 auto;
-    margin-bottom: 76px;
+
     min-height: 820px;
   }
 
@@ -55,66 +55,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
-  }
-}
-
-.promo-gift {
-  position: relative;
-  box-sizing: border-box;
-  text-align: center;
-  min-height: 290px;
-  padding-top: 186px;
-  background-color: #68b738;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 82px;
-    background-image: url("../img/icon_gift.svg");
-
-    @media (min-width: $tablet-width) {
-      top: 50%;
-      left: 77px;
-      transform: translateY(-50%) translateX(0);
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 55px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    padding-right: 124px;
-    min-height: 200px;
-    text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 288px;
-    width: 245px;
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 42px;
-  }
-
-  &__promo-text {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    margin: 0;
   }
 }
