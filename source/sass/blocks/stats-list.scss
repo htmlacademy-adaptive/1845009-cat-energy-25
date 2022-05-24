@@ -43,6 +43,7 @@
   color: $font-additional-color;
 
   @media (min-width: $tablet-width) {
+    width: 130px;
     font-size: 14px;
     line-height: 14px;
     background-color: $background-primary-color;

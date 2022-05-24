@@ -14,10 +14,10 @@
   position: relative;
   min-height: 234px;
   width: 100%;
-  margin-bottom: 15px;
+
 
   @media (min-width: $tablet-width) {
-    min-height: 514px;
+    min-height: 510px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 }
 
-.slider-resutl__range-bar {
+.slider-result__range-bar {
   display: flex;
   position: relative;
   align-items: center;
