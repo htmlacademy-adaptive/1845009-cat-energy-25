@@ -20,7 +20,7 @@
   }
 }
 
-.nutrition-programm__wrapper {
+.nutrition-program__wrapper {
   @media (max-width: $mobile-width-only) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px);
     padding-bottom: 5px;
@@ -28,7 +28,7 @@
 }
 
 .nutrition-program__inner-wrapper {
-  min-height: 480px;
+  min-height: 475px;
   padding: 0 20px;
   padding-top: 26px;
 
@@ -90,7 +90,7 @@
   }
 }
 
-.nutrition-programm__image {
+.nutrition-program__image {
   display: block;
   width: 280px;
   height: 270px;
@@ -123,6 +123,8 @@
     position: absolute;
     top: 230px;
     width: auto;
+    font-size: 20px;
+    line-height: 20px;
     padding: 14px 26px;
     z-index: 10;
   }

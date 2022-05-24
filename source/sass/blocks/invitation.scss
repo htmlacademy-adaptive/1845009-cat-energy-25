@@ -1,18 +1,23 @@
 @import "../base/variables";
 
 .invitation__wrapper {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     width: 100%;
-    max-width: 1440px;
     min-height: 600px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     min-height: 400px;
+    text-align: right;
+  }
+}
+
+.invitation__text-wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    position: relative;
+    width: 1440px;
   }
 }
 
@@ -77,13 +82,4 @@
 
 .invitation__city {
   margin: 0;
-}
-
-
-@media (min-width: $desktop-width) {
-  .invitation__wrapper {
-    width: 1440px;
-    min-height: 400px;
-    text-align: right;
-  }
 }
