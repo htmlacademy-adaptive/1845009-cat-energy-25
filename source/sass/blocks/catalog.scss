@@ -4,7 +4,7 @@
   position: relative;
   padding: 0 20px;
   padding-top: 27px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -23,14 +23,15 @@
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 1220px;
-    padding-top: 60px;
+    padding-top: 30px;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-bottom: 75px;
+    padding-top: 48px;
+    margin-bottom: 54px;
   }
 }
 
@@ -40,7 +41,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
 
   &::after {
     content: "";
@@ -63,6 +64,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 78px;
   }
 }

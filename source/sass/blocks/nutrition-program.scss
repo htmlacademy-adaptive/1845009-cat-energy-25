@@ -23,7 +23,6 @@
 .nutrition-program__wrapper {
   @media (max-width: $mobile-width-only) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px);
-    padding-bottom: 5px;
   }
 }
 
@@ -33,20 +32,23 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 92%;
     max-width: 1220px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 28px;
+    min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 110px;
+    padding-top: 80px;
+    min-height: auto;
+    padding-bottom: 186px;
   }
 }
 
 .nutrition-program__text-wrapper {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -54,11 +56,10 @@
   @media (min-width: $tablet-width) {
     display: block;
     text-align: left;
-    margin-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 0;
   }
 }
 
@@ -73,6 +74,13 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -87,6 +95,13 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 50px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -96,18 +111,23 @@
   height: 270px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: -30px;
-    left: -100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 709px;
-    height: auto;
+    height: 609px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -90px;
-    left: 368px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-30%);
     width: 552px;
+    height: 499px;
+    z-index: 1;
   }
 }
 
@@ -116,20 +136,19 @@
   font-size: 14px;
   line-height: 18px;
   padding: 7px 0;
-  z-index: 2;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    position: absolute;
-    top: 230px;
+    margin-left: 87px;
     width: auto;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
-    z-index: 10;
+    padding: 16px 26px;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    margin-left: 80px;
+    position: relative;
+    z-index: 10;
   }
 }

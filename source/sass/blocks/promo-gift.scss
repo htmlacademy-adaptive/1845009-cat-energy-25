@@ -21,7 +21,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -10px;
     background-image: url("../img/promo-gift__background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -86,14 +85,6 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding-bottom: 42px;
-  }
-
-  &__promo-text {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    margin: 0;
+    padding-bottom: 28px;
   }
 }

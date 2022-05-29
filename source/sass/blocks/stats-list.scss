@@ -16,12 +16,18 @@
 .stats-list__number {
   grid-row: 1 / 2;
   text-align: center;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats-list__description {
@@ -43,10 +49,14 @@
   color: $font-additional-color;
 
   @media (min-width: $tablet-width) {
-    width: 130px;
+    width: 120px;
     font-size: 14px;
     line-height: 14px;
     background-color: $background-primary-color;
+
+    &--time {
+      width: 135px;
+    }
 
     br {
       display: none;

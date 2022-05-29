@@ -5,14 +5,12 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px;
-    align-items: baseline;
     column-gap: 80px;
   }
 }
@@ -56,19 +54,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 67px;
+      margin-bottom: 65px;
     }
   }
 
-  &:last-of-type {
+  &--addition {
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 61px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -78,7 +76,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -156,11 +154,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 123px;
+      row-gap: 20px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      column-gap: 0;
     }
   }
 
@@ -198,10 +199,31 @@
 }
 
 .selection-form__item {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+    margin-bottom: 10px;
+
+    &:nth-child(2) {
+      margin-right: 137px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 198px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

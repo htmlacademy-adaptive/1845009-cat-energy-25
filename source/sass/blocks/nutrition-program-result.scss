@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, #eaeaea 462px, $background-primary-color 462px);
-    padding-bottom: 56px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to top, #f2f2f2 462px, $background-primary-color 462px);
-    padding-bottom: 65px;
+    padding-bottom: 76px;
   }
 }
 
@@ -21,6 +21,7 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     width: 92%;
     max-width: 1220px;
     margin: 0 auto;
@@ -29,12 +30,14 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 1220px;
   }
 }
 
 .nutrition-program-result__description {
   @media (min-width: $desktop-width) {
+    padding-top: 42px;
     width: 436px;
   }
 }
@@ -53,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 150px;
   }
 }
 
@@ -73,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 
@@ -98,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 }
 
@@ -115,6 +118,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    top: -18px;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
@@ -126,6 +131,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    position: static;
     justify-content: space-between;
     width: 328px;
     margin-bottom: 0;

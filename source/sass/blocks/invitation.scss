@@ -1,9 +1,10 @@
 @import "../base/variables";
 
 .invitation__wrapper {
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 600px;
     margin: 0 auto;
   }
 
@@ -27,6 +28,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     width: 89%;
     max-width: 1180px;
     margin: 0 auto;
@@ -35,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    padding: 56px 80px;
     top: 95px;
     left: 90px;
     background-color: #ffffff;
@@ -50,6 +53,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -78,8 +82,20 @@
     margin-bottom: 20px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .invitation__city {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

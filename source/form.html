@@ -9,6 +9,10 @@
     <link rel="icon" href="img/favicons/apple-favicon.png">
     <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -105,7 +109,7 @@
             </div>
             <fieldset class="selection-form__group selection-form__group--cat-owner">
               <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-              <h2 class="selection-form__title selection-form__title--cat-owner line-title">Контактные данные<br> (владельца кота)</h2>
+              <h2 class="selection-form__title selection-form__title--cat-owner line-title line-title--contacts">Контактные данные<br> (владельца кота)</h2>
               <div class="selection-form__contacts-wrapper">
                 <label class="selection-form__field selection-form__field--cat-owner">
                   <span class="selection-form__field-label">E-mail:*</span>
@@ -128,7 +132,7 @@
               <h2 class="selection-form__title line-title">Комментарий</h2>
               <textarea class="selection-form__comment comment-input" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="selection-form__group">
+            <fieldset class="selection-form__group selection-form__group--addition">
               <legend class="visually-hidden">Дополнительно</legend>
               <h2 class="selection-form__title selection-form__title--addition line-title">Дополнительно</h2>
               <ul class="selection-form__list selection-form__list--addition">
@@ -183,6 +187,15 @@
             </div>
           </div>
           <div class="invitation__map map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablett@2x.webp 2x">
+              <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+              <img class="map__image map__image--nojs" src="img/map/map-mobile.jpg"
+              srcset="img/map/map-mobile@2x.jpg 2x" width="320" height="362" alt="map">
+            </picture>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716354522!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1651405558341!5m2!1sru!2sru"
             width="320" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
