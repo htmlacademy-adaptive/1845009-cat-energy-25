@@ -71,6 +71,3 @@ for (let i = 0; i < sliderButtons.length; i++) {
 };
 
 buttonClickHandler(sliderToggle);
-
-
-
