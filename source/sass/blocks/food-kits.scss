@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 1220px;
-    min-height: 772px;
+
     margin: 0 auto;
   }
 
@@ -56,9 +56,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 41px;
+      top: 48px;
       transform: none;
-      left: 67px;
+      left: 54px;
       right: auto;
       width: 100px;
       height: 100px;
@@ -81,7 +81,7 @@
     background-size: 36px 50px;
 
     @media (min-width: $tablet-width) {
-      top: 60px;
+      top: 74px;
       left: auto;
       right: 92px;
       width: 140px;
@@ -90,8 +90,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 35px;
-      left: 80px;
+      top: 42px;
+      left: 70px;
       right: auto;
       width: 70px;
       height: 97px;
@@ -117,8 +117,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 60px;
-      left: 48px;
+      top: 70px;
+      left: 36px;
       right: auto;
       width: 134px;
       height: 56px;
@@ -135,6 +135,7 @@
     padding-left: 53px;
     padding-right: 316px;
     padding-bottom: 53px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -155,13 +156,14 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 162px;
-    margin-bottom: 73px;
-    font-size: 36px;
-    line-height: 36px;
+    margin-bottom: 74px;
   }
 }
 
@@ -186,7 +188,7 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     color: $font-primary-color;
     font-size: 16px;
     line-height: 24px;
@@ -202,7 +204,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 

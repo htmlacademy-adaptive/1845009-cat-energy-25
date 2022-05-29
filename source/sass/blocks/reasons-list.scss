@@ -13,12 +13,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 37px;
+    row-gap: 38px;
+    column-gap: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto auto auto auto;
-    row-gap: 110px;
+    grid-template-columns: 230px 246px 248px 250px;
+    column-gap: 94px;
   }
 }
 
@@ -97,7 +98,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;

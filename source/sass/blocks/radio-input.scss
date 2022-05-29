@@ -40,6 +40,10 @@
   border-color: #bababa;
 }
 
+.radio-input:focus:checked + .radio-mark {
+  outline: 2px solid #444444;
+}
+
 .selection-form__radio-input:checked + .radio-mark::before {
   display: block;
 }

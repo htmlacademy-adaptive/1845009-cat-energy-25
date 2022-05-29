@@ -45,6 +45,10 @@
   display: block;
 }
 
+.checkbox-input:focus + .checkbox-mark {
+  outline: 2px solid #444444;
+}
+
 .selection-form__checkbox-input:disabled + .checkbox-mark,
 .selection-form__checkbox-input:disabled ~ .selection-form__checkbox-label {
   opacity: 0.3;

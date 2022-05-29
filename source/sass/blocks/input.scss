@@ -1,7 +1,7 @@
 @import "../base/variables";
 
 .input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -16,26 +16,10 @@
 
   &:focus {
     outline: 2px solid #444444;
-
-    & + .input-icon--phone {
-      fill: #68b738;
-    }
-
-    & + .input-icon--email {
-      stroke: #68b738;
-    }
   }
 
   &--error {
     outline: 2px solid #ff8282;
-
-    & + .input-icon--phone {
-      fill: #ff8282;
-    }
-
-    & + .input-icon--email {
-      stroke: #ff8282;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -43,6 +27,22 @@
     line-height: 30px;
     padding: 10px 20px;
   }
+}
+
+.input:focus + .input-icon--phone {
+  fill: #68b738;
+}
+
+.input:focus + .input-icon--email {
+  stroke: #68b738;
+}
+
+.input--error + .input-icon--phone {
+  fill: #ff8282;
+}
+
+.input--error + .input-icon--email {
+  stroke: #ff8282;
 }
 
 .input-wrapper {
@@ -57,3 +57,4 @@
   transform: translateY(-50%);
   right: 20px;
 }
+

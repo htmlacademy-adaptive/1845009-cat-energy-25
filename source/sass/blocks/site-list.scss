@@ -72,10 +72,6 @@
     background-color: #68b738;
   }
 
-  .site-list__item--active-index a::after {
-    background-color: $font-alternative-color;
-  }
-
   .site-list__link {
     font-weight: 400;
     font-size: 18px;
@@ -102,6 +98,10 @@
           color: rgba(255, 255, 255, 0.3);
         }
       }
+    }
+
+    .site-list__item--active-index a::after {
+      background-color: $font-alternative-color;
     }
 
     .site-list__link {
