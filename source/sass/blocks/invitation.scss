@@ -32,14 +32,14 @@
     width: 89%;
     max-width: 1180px;
     margin: 0 auto;
-    padding: 56px 40px;
+    padding: 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    padding: 56px 80px;
+    padding: 60px 80px;
     top: 95px;
-    left: 90px;
+    left: 110px;
     background-color: #ffffff;
     width: 565px;
   }
@@ -72,6 +72,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
   }
 }
 
@@ -84,6 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
     text-align: left;
   }
 }

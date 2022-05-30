@@ -18,8 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 246px 248px 250px;
-    column-gap: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 0;
   }
 }
 
@@ -107,10 +109,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
+    margin-right: 70px;
 
     &--reason-1 {
-      margin-left: 0;
+      margin-right: 94px;
+    }
+
+    &--reason-2 {
+      margin-right: 78px;
+    }
+
+    &--reason-3 {
+      margin-right: 78px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

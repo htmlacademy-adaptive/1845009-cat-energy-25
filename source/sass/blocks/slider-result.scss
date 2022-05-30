@@ -112,7 +112,7 @@
 .slider-result__image-container--middle-fat .slider-result__image {
   @media (min-width: $tablet-width) {
     object-fit: cover;
-    object-position: -20px 0;
+    object-position: -6px -12px;
   }
 }
 
@@ -130,8 +130,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    width: 592px;
+    width: 100%;
   }
 }
 
@@ -141,7 +140,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 426px;
+    width: 434px;
     height: 6px;
     border-radius: 6px;
     background-color: #cdcdcd;
@@ -160,7 +159,7 @@
   padding: 0;
 
   &--before {
-    margin-right: 8px;
+    margin-right: 10px;
   }
 
   &--after {
