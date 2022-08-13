@@ -1,3 +1,5 @@
+permalink: /index.html
+
 # Личный проект «Кэт энерджи»
 
 * Студент: [Андрей Щербина](https://up.htmlacademy.ru/adaptive/25/user/1845009).
