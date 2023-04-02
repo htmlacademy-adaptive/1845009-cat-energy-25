@@ -13,7 +13,6 @@ import svgo from 'gulp-svgmin';
 import del from 'del';
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
@@ -82,6 +81,7 @@ const copy = (done) => {
     'source/*.ico',
     'source/img/sprite.svg',
     'source/manifest.webmanifest',
+    'source/nouislider/*'
   ], {
     base: 'source'
   })

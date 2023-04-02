@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="nouislider/nouislider.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/apple-favicon.png">
@@ -178,33 +179,32 @@
           </div>
           <div class="nutrition-program-result__slider slider-result">
             <div class="slider-result__images-wrapper">
-              <div class="slider-result__image-container slider-result__image-container--before slider-result__image-container--middle-fat">
+              <div class="slider-result__image-container slider-result__image-container--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/before-tablet.webp 1x, img/slider/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/slider/before-mobile.webp 1x, img/slider/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/slider/before-tablet.png 1x, img/slider/before-tablet@2x.png 2x">
                   <img class="slider-result__image slider-result__image--before" src="img/slider/before-mobile.png"
-                  srcset="img/slider/before-mobile@2x.png 2x" width="280" height="232" alt="before">
+                  srcset="img/slider/before-mobile@2x.png 2x" width="280" height="232" alt="before" draggable="false">
                 </picture>
               </div>
-              <div class="slider-result__image-container slider-result__image-container--after slider-result__image-container--middle-slim">
+              <div class="slider-result__image-container slider-result__image-container--after slider-result__image-container--mobile-closed">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/after-tablet.webp 1x, img/slider/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/slider/after-mobile.webp 1x, img/slider/after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/slider/after-tablet.png 1x, img/slider/after-tablet@2x.png 2x">
                   <img class="slider-result__image slider-result__image--after" src="img/slider/after-mobile.png"
-                  srcset="img/slider/after-mobile@2x.png 2x" width="155" height="232" alt="after">
+                  srcset="img/slider/after-mobile@2x.png 2x" width="155" height="232" alt="after" draggable="false">
                 </picture>
               </div>
             </div>
             <div class="slider-result__text-wrapper">
               <button class="slider-result__label slider-result__label--before slider-result__label--active">Было</button>
               <div class="slider-result__range-bar">
-                <div class="slider-result__range-button slider-result__range-button--start slider-result__range-button--middle">
-                  <div class="slider-result__toggle">
-                    <span class="visually-hidden">Переключатель</span>
-                  </div>
-                </div>
+
+              </div>
+              <div class="slider-result__mobile-button">
+                <div class="slider-result__mobile-inner-button"></div>
               </div>
               <button class="slider-result__label slider-result__label--after">Стало</button>
             </div>
@@ -288,6 +288,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="nouislider/nouislider.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
