@@ -1,7 +1,10 @@
-Личный проект «Кэт энерджи».
+# Проект «Cat Energy».
 В данном проекте реализована адаптивная верстка макета. Выполнены три страницы: главная, каталог, форма заказа.
 Применены следующие технологии: HTML, CSS, препроцессор Sass, JavaScript, таск-менеджер Gulp для сборки проекта.
 Использована библиотека nouislider для реализации слайдера "До/ после"
-GH-pages: https://shcherbina-andrei.github.io/1845009-cat-energy-25/index.html
+
+**Стек технологий:** HTML, CSS, JavaScript, Sass, Gulp
+
+**Ознакомьтесь с deploy-версией:** https://shcherbina-andrei.github.io/1845009-cat-energy-25/index.html
 
 
